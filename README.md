@@ -57,6 +57,13 @@ peaks
   #2 ppm is the mass tolerance to find isotopic peaks
   #'0.80 is the correlation coefficient to extract isotopic peaks
   #'3 is the intensity ratio cutoff between primary and other isotopic peaks
-  peaks.iso<-FindIsotope(peaks,2,0.80,0.3)
-#> [1] "MS file..." "1"
+  peaks.iso<-FindIsotope(peaks,2,0.80,2)
+#> [1] "MS file..." "1"         
+#> [1] "MS file..." "2"         
+#> [1] "MS file..." "3"         
+#> [1] "MS file..." "4"         
+#> [1] "MS file..." "5"         
+#> [1] "MS file..." "6"         
+#> [1] "MS file..." "7"         
+#> [1] "MS file..." "8"
 ```

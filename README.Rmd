@@ -44,7 +44,7 @@ Step 1: loading packages
 ```
 
 Step 2: extracting peak features from raw mass spectrometry data
-```{r, include=FALSE}
+```{r, include= FALSE}
   #'10000 is the intensity cutoff to extract peaks, 2.5 ppm is the mass tolerance for peak detection
   peak<-Peakextract(100000,2.5)
 ```
@@ -63,5 +63,5 @@ Step 4: identifying primary isotopic peaks, and remove redudant isotopic peaks
   #2 ppm is the mass tolerance to find isotopic peaks
   #'0.80 is the correlation coefficient to extract isotopic peaks
   #'3 is the intensity ratio cutoff between primary and other isotopic peaks
-  peaks.iso<-FindIsotope(peaks,2,0.80,0.3)
+  peaks.iso<-FindIsotope(peaks,2,0.80,2)
 ```

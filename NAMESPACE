@@ -3,3 +3,4 @@
 export(DiffPeaks)
 export(FindIsotope)
 export(Peakextract)
+import(xcms)

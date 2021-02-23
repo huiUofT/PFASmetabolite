@@ -78,7 +78,7 @@ FindIsotope<-function(peaklist,mz_tol,corrcut,intensitycut){
     #'only keep those mz smaller as we are interested in primary isotopic peaks
     index.min<-which(mz.iso<(mz-1))
     if (length(index.min)<1){
-      return(peaklist)
+      next
     }
     mz.iso<-mz.iso[index.min]
     
@@ -113,7 +113,7 @@ FindIsotope<-function(peaklist,mz_tol,corrcut,intensitycut){
       mz.iso<-mz.iso[save.iso]
       
       #'the smallest isotopic peak is the exact mass
-      peaklist$PrimaryIso[j]<-min(mz.iso)
+      peaklist$PrimaryIso[temp]<-min(mz.iso)
     }
     }
   }
